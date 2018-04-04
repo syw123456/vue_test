@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/Home'
+import Dashboard from '@/pages/Dashboard'
 import Login from '@/pages/Login'
 import LockScreen from '@/pages/LockScreen'
 
@@ -10,7 +11,14 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Home
+      component: Home,
+      children: [
+        {
+          path: '/',
+          name: 'dashboard',
+          component: Dashboard
+        }
+      ]
     },
     {
       path: '/Login',

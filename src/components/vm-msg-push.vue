@@ -19,7 +19,6 @@
      </Dropdown-menu>
  </Dropdown>
 </template>
-
 <script>
     export default {
       name: 'VmMsgPush',
@@ -32,7 +31,3 @@
       }
     }
 </script>
-
-<style scoped>
-
-</style>

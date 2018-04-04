@@ -71,6 +71,10 @@
            </Submenu>
          </Menu>
       </div>
+     <div class="main-content">
+       <router-view></router-view>
+       <p class="vm-author"> vue-manager designed by <a href="#" target="_blank">Jesse Luo</a></p>
+     </div>
    </div>
 </template>
 <script>
@@ -126,5 +130,8 @@
 </script>
 
 <style scoped>
-
+/*
+模块更新的东西
+AG的生命周期
+*/
 </style>

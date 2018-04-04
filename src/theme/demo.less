@@ -64,11 +64,12 @@ img{
 }
 .vm-author{
   line-height: 45px;
-  font-size: 45px;
+  font-size: 14px;
   a{
     color: @primary-color;
   }
 }
+/*左侧的导航*/
 .sidebar{
   height: 100%;
   width: @sidebar-width;
@@ -87,6 +88,13 @@ img{
   }
   .menu{
     margin-top: 70px;
+  }
+}
+.main-content{
+  margin-left: @sidebar-width;
+  &>div{
+    margin-top: @nav-height;
+    padding: 15px;
   }
 }
 
